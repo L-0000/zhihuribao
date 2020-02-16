@@ -1,0 +1,83 @@
+*{margin:0;padding:0;font-size:16px;}
+img{display:block;}
+li{list-style:none;}
+a{text-decoration:none;color:#000000;}
+h1,p{margin:0!important;}
+
+/*首页*/
+/* #index{padding:1rem;} */
+.indexHeader{overflow:auto;padding:0.8rem;}
+.leftHeader,.centerHeader{float:left;}
+.rightHeader{overflow:auto;}
+.leftHeader{width:15%;text-align:center;font-weight:bold;}
+.leftHeader .oneP{font-size:1.8rem;}
+.centerHeader h1{font-size:1.8rem;}
+.rightHeader img{width:30%;float:right;}
+/*轮播图*/
+/* .swiper-pagination-bullet-custom{width:9px;height:9px;text-align:center;line-height:20px;font-size:12px;color: #000;opacity:1;border-radius:0;background:#fff;}
+.swiper-pagination-bullet-custom.swiper-pagination-bullet-active {color:#fff;background:#a11703;} */
+.banner{position:relative;}
+.banner img{width:374px;}
+.banner p{position:absolute;left:1rem;bottom:2rem;color:#FFFFFF;font-size:1.5rem;font-weight:bold;}
+.banner p span{display:block;margin-top:1rem;color:#ccc}
+/* .banner{position:relative;left:0;top:0;} */
+.articleList{padding:0.8rem;overflow:auto;}
+.articleList .leftList{float:left;width:80%;margin-bottom:1rem;}
+.articleList .leftList h2{font-size:1.2rem;margin-bottom:0.5rem;color:#000;}
+.articleList .leftList p{color:#666;}
+.articleList .rightList img{width:20%;float:right;}
+.agoTime{padding-left:0.8rem;color:#999;}
+.agoTime .line{margin-left:1rem;}
+.agoTime span{font-size:1rem;font-weight:bold;}
+.agoTimeList{padding:0.8rem;overflow:auto;}
+.agoTimeList .leftList{float:left;width:80%;margin-bottom:1rem;}
+.agoTimeList .leftList h2{font-size:1.2rem;margin-bottom:0.5rem;color:#000;}
+.agoTimeList .leftList p{color:#666;}
+.agoTimeList .rightList img{width:20%;float:right;}
+
+/*我的*/
+#my{padding:0.8rem;}
+.back img{width:7%;}
+.user{padding-top:1rem;margin:0 auto;text-align:center;}
+.user img{width:30%;margin:0 auto;}
+.user h1{margin:0.8rem 0 1.5rem 0!important;font-size:1.2rem;}
+.collect{overflow:auto;border-top:0.1rem solid #f1f1f1;padding:1rem 0.5rem;}
+.collect p{float:left;}
+.collect img{float:right;}
+.myBot{overflow:auto;text-align:center;position:relative;bottom:-13rem;left:0;}
+.myLeft,.myRight{float:left;width:50%;}
+.myBot img{margin:0 auto 0.8rem auto;}
+
+/*swiperDetails*/
+.swiperBan img{width:374px;}
+.swiperContent{padding:1rem;}
+.swiperContent h1{font-size:1.2rem}
+.swiperContent .explain{margin:1rem 0;}
+.explain .autor{color:#666;margin-right:1.2rem;}
+.swiperFoot{overflow:auto;background-color:#F1F1F1;padding:1rem 0;position:relative;bottom:-20.5rem;left:0;}
+.swiperFoot li{float:left;width:20%;}
+.swiperFoot li img{margin:0 auto;width:40%;}
+
+/*commment*/ 
+#commment .backTwo{padding:0.5rem;overflow:auto;border-bottom:0.1rem solid #F1F1F1;}
+.backTwo img{float:left;width:7%;}
+.backTwo h1{width:92%;text-align:center;font-size:1.2rem;}
+.long{padding:0.5rem;}
+.long h2{font-size:1.1rem;}
+.longWords{padding:1rem 0.5rem 0.5rem 0;border-bottom:0.1rem solid #F1F1F1;display:flex;}
+.longLeft{padding:0 0.5rem 0 0;margin-bottom:5rem;}
+.longLeft img{width:2.5rem;}
+.longRight h3{margin-bottom:0.4rem;}
+.longRight p{line-height:1.5rem;}
+.lastLine{overflow:auto;margin-top:1rem;}
+.lastLine span{float:left;margin-right:7rem;}
+.lastLine img{width:1.3rem;float:left;}
+.lastLine img.ping{margin-left:3rem;}
+.lastLine span{color:#666;}
+.short{padding:0.5rem;}
+.short h2{font-size:1.1rem;}
+.shortWords{padding:1rem 0.5rem 0.5rem 0;border-bottom:0.1rem solid #F1F1F1;display:flex;}
+.shortLeft{padding:0 0.5rem 0rem 0;}
+.shortLeft img{width:2.5rem;}
+.shortRight h3{margin-bottom:0.4rem;}
+.shortRight p{line-height:1.5rem;}
