@@ -14,12 +14,11 @@
 					)">{{grt}}</h1>
 			</div>
 			<div class="rightHeader">
-				<router-link to="My">
+				<router-link :to="{name:'My'}">
 				<img src="../assets/img/1.jpg" />
 				</router-link>
 			</div>
 		</div>
-		<div class="banner">
 			<!-- <swiper :options="swiperOption">
 				<swiper-slide v-for="banner in banner" :key="banner.title">
 					<router-link to="banner.url">
@@ -28,7 +27,8 @@
 				</swiper-slide>
 				<div class="swiper-pagination swiper-pagination-bullets" slot="pagination"></div>
 			</swiper> -->
-			<van-pull-refresh>
+		<van-pull-refresh v-model="isloading"  @refresh="onRefresh">
+			<div class="banner">
 				<van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
 					<van-swipe-item v-for="banner in banner" :key="banner.title">
 						<a :href="banner.url">
@@ -40,10 +40,10 @@
 						</a>
 					</van-swipe-item>
 				</van-swipe>
-			</van-pull-refresh>
-		</div>
+			</div>
+		</van-pull-refresh>
 		<div class="articleList">
-			<router-link to="swiperDetails" v-for="articleList in articleList" :key="articleList.title">
+			<router-link :to="{name:'swiperDetails'}" v-for="articleList in articleList" :key="articleList.title">
 				<div class="leftList">
 					<h2>{{ articleList.title }}</h2>
 					<p>{{ articleList.hint }}</p>
@@ -75,14 +75,19 @@
 	import "../assets/css/swiper.min.css";
 	import Vue from 'vue';
 	import { Swipe,SwipeItem } from 'vant';
+	import { PullRefresh } from 'vant';
+	import { Toast } from 'vant';
 	Vue.use(Swipe);
 	Vue.use(SwipeItem);
+	Vue.use(PullRefresh);
 	export default{
 		components:{
 			
 		},
 		data(){
 			return{
+				count:0,
+				isLoading:false,
 				banner:[],
 				articleList:[],
 				agoTimeList:[],
@@ -109,6 +114,15 @@
 				MM = MM < 10 ? (MM) : MM;
 				return MM+'月'
 				}
+		},
+		//下拉刷新
+		methods:{
+			onRefresh(){
+				setTimeout(()=>{
+					Toast('刷新成功');
+					this.isLoading = false;
+				},1000);
+			}
 		},
 		//接口
 		mounted:function(){

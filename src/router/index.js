@@ -16,14 +16,17 @@ const routes = [
 	},
 	{
 	path:'/My',
+	name:'My',
 	component:My  
 	},
 	{
 	path:'/swiperDetails',
+	name:'swiperDetails',
 	component:swiperDetails  
 	},
 	{
 	path:'/Commment',
+	name:'Commment',
 	component:Commment  
 	},
 	{

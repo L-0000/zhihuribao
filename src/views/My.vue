@@ -1,7 +1,7 @@
 <template>
 	<div id="my">
 		<div class="back">
-			<router-link to="/">
+			<router-link :to="{name:'Index'}">
 				<img src="../assets/img/back.png" />
 			</router-link>
 		</div>
